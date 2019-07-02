@@ -1,16 +1,20 @@
 package com.example.baihoc1.ontap1appkorea.Controller;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.baihoc1.ontap1appkorea.R;
 
 public class MainActivity extends AppCompatActivity {
+    BottomNavigationView bottomNavigationView;
 
-    TextView tvContact, tvPlace, tvPromotion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,40 +24,36 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void init(){
-//        tvContact = findViewById(R.id.tv_contact);
-//        tvPlace = findViewById(R.id.tv_place);
-//        tvPromotion = findViewById(R.id.tv_promotion);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setOnNavigationItemSelectedListener
+                (new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                        switch (menuItem.getItemId()){
+                            case  R.id.nav_home: {
 
-        tvContact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                                break;
+                            }
+                            case  R.id.nav_contact : {
+                                ContactFragment categoryFragment = new ContactFragment();
+                                FragmentTransaction fragmentTransaction =
+                                        getSupportFragmentManager().beginTransaction();
+                                fragmentTransaction.replace(R.id.container,categoryFragment);
+                                fragmentTransaction.commit();
+                                break;
+                            }
+                            case  R.id.nav_place : {
 
-                Intent contact = new Intent(MainActivity.this, Contact.class);
-                startActivity(contact);
+                                break;
+                            }
+                            case  R.id.nav_promation : {
 
-            }
-        });
-
-        tvPlace.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent place = new Intent(MainActivity.this, Place.class);
-                startActivity(place);
-
-            }
-        });
-
-        tvPromotion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent promotion = new Intent(MainActivity.this, Promotion.class);
-                startActivity(promotion);
-
-            }
-        });
-
+                                break;
+                            }
+                        }
+                        return true;
+                    }
+                });
 
     }
 

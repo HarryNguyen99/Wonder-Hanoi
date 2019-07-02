@@ -7,9 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import com.example.baihoc1.ontap1appkorea.Model.ContactResult;
-import com.example.baihoc1.ontap1appkorea.Model.PlaceResult;
 import com.example.baihoc1.ontap1appkorea.R;
+
 import java.util.List;
 
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactViewHolder> {
