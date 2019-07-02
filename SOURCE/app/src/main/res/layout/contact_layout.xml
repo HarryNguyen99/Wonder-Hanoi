@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_bg_contact_1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_bg_contact_2" />
+
+    <TextView
+        android:id="@+id/tv_tieu_de"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF8F07"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="베트남 한인업소록 원더하노이"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <include layout="@layout/tim_kiem_layout"></include>
+
+    <View
+        android:id="@+id/v_tim_kiem"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/ll_tim_kiem"
+        android:background="#000"></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sdt_khancap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_tim_kiem">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

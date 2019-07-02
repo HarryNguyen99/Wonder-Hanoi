@@ -1,0 +1,99 @@
+{
+    "status": 1,
+    "code": 200,
+    "result": [
+        {
+            "promotionID": 7,
+            "urlImage": "http://150.95.115.192/Uploads/images/ATOZ.png",
+            "promotionName": "베트남 사업성공을 위한 최고의 파트너 ATOZ",
+            "placeDetail": {
+                "placeID": 11708,
+                "placeName": "아토즈컨설팅(ATOZ)",
+                "urlLogoPlace": "http://150.95.115.192/Uploads/images/ATOZ.png",
+                "categoryID": 8,
+                "address": "1 Phạm Huy Thông, Ngọc Khánh, Ba Đình, Hà Nội, 베트남",
+                "phone": "024 3200 6501",
+                "urlWeb": "http://www.atozvn.vn",
+                "description": "<h3>성공적 베트남 사업을 위한 진정한 파트너 ATOZ를 소개합니다.</h3>\r\n",
+                "urlBanner": "http://150.95.115.192/Uploads/images/%EC%95%84%ED%86%A0%EC%A6%88%EC%86%8C%EA%B0%9C%EC%9E%90%EB%A3%8C.png",
+                "isMoreDetail": 1,
+                "isPromotion": 1,
+                "longitude": 105.81093750000002,
+                "latitude": 21.0263125,
+                "kakaoTalk": "",
+                "listMedia": [
+                    {
+                        "urlID": "http://150.95.115.192/Uploads/images/%EC%95%84%ED%86%A0%EC%A6%88%EC%86%8C%EA%B0%9C%EC%9E%90%EB%A3%8C.jpeg",
+                        "type": 1
+                    }
+                ]
+            }
+        },
+        {
+            "promotionID": 4,
+            "urlImage": "http://150.95.115.192/Uploads/files/%EC%8B%A0%EB%8B%A4%EC%9D%B4%20%EC%9C%88%EC%A6%88.png",
+            "promotionName": "중국원단 판매",
+            "placeDetail": {
+                "placeID": 11678,
+                "placeName": "신다이 윈즈(중국원단)",
+                "urlLogoPlace": "http://150.95.115.192/Uploads/files/%EC%8B%A0%EB%8B%A4%EC%9D%B4%20%EC%9C%88%EC%A6%88.png",
+                "categoryID": 9,
+                "address": "1 Phạm Huy Thông, Ngọc Khánh, Ba Đình, Hà Nội, 베트남",
+                "phone": "096 969 4630",
+                "urlWeb": "",
+                "description": "",
+                "urlBanner": null,
+                "isMoreDetail": 1,
+                "isPromotion": 1,
+                "longitude": 105.81093750000002,
+                "latitude": 21.0261875,
+                "kakaoTalk": "",
+                "listMedia": [
+                    {
+                        "urlID": "http://150.95.115.192/Uploads/files/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-05-25%20%EC%98%A4%EC%A0%84%2010_22_52.png",
+                        "type": 1
+                    },
+                    {
+                        "urlID": "http://150.95.115.192/Uploads/files/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-05-25%20%EC%98%A4%EC%A0%84%2010_23_06.png",
+                        "type": 1
+                    },
+                    {
+                        "urlID": "http://150.95.115.192/Uploads/files/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-05-25%20%EC%98%A4%EC%A0%84%2010_23_16.png",
+                        "type": 1
+                    },
+                    {
+                        "urlID": "http://150.95.115.192/Uploads/files/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-05-25%20%EC%98%A4%EC%A0%84%2010_23_26.png",
+                        "type": 1
+                    },
+                    {
+                        "urlID": "http://150.95.115.192/Uploads/files/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202019-05-25%20%EC%98%A4%EC%A0%84%2010_23_40.png",
+                        "type": 1
+                    }
+                ]
+            }
+        },
+        {
+            "promotionID": 2,
+            "urlImage": "http://150.95.115.192/Uploads/images/%ED%9A%8C%EC%82%AC%20CI%20%EC%B5%9C%EC%A2%85.png",
+            "promotionName": "베트남 부동산의 모든것(공단,상가,아파트,빌라/매매,임대)",
+            "placeDetail": {
+                "placeID": 1074,
+                "placeName": "코스모(COSMO)",
+                "urlLogoPlace": "http://150.95.115.192/Uploads/images/%ED%9A%8C%EC%82%AC%20CI%20%EC%B5%9C%EC%A2%85.png",
+                "categoryID": 8,
+                "address": "20F ngoc Khach Plaza, 01 Pham Huy Thong , Ba Dinh",
+                "phone": "0944452370",
+                "urlWeb": "",
+                "description": "",
+                "urlBanner": null,
+                "isMoreDetail": 1,
+                "isPromotion": 1,
+                "longitude": 105.81093750000002,
+                "latitude": 21.0263125,
+                "kakaoTalk": "",
+                "listMedia": []
+            }
+        }
+    ],
+    "message": ""
+}

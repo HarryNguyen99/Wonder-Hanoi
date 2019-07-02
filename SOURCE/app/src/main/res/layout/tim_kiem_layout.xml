@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_tim_kiem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_tieu_de"
+    android:background="#393e42">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/gry_round_tk">
+
+        <ImageView
+            android:id="@+id/img_tim_kiem"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@mipmap/ic_tim_kiem" />
+
+        <EditText
+            android:id="@+id/edt_tim_kiem"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/img_tim_kiem"
+            android:background="@null"
+            android:hint="여기에 입력하세요…"
+            android:textColor="#8692a0"
+            android:textColorHint="#8692a0"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</LinearLayout>

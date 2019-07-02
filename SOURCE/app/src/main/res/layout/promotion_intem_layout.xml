@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_marginHorizontal="3dp"
+    android:background="#000"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/img_logo_ks"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/yellow"
+        android:src="@mipmap/img_logo_khach_san" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_name_ks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Tên"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_mota_ks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Mô tả"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="#FD8E08"
+                android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="60dp"
+        android:layout_weight="0.8"
+        android:padding="5dp"
+        android:src="@mipmap/ic_arrow" />
+
+
+</LinearLayout>

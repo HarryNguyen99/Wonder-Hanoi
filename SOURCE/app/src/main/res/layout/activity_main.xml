@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tieu_de"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF8F07"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="베트남 한인업소록 원더하노이"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+</LinearLayout>

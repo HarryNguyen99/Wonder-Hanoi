@@ -1,0 +1,121 @@
+{
+    "status": 1,
+    "code": 200,
+    "result": [
+        {
+            "contactID": 1,
+            "name": "긴급전화(경찰)",
+            "phone": "113",
+            "description": "<p>null</p>\r\n"
+        },
+        {
+            "contactID": 2,
+            "name": "긴급전화(구급차)",
+            "phone": "115",
+            "description": ""
+        },
+        {
+            "contactID": 3,
+            "name": "긴급전화(소방서)",
+            "phone": "114",
+            "description": ""
+        },
+        {
+            "contactID": 4,
+            "name": "전화번호안내",
+            "phone": "1080",
+            "description": ""
+        },
+        {
+            "contactID": 5,
+            "name": "하노이 대사관",
+            "phone": "024 3831 5110-6",
+            "description": "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;28th lotte center, 54 lieu giai, ba dinh, ha noi, vietnam</p>\r\n"
+        },
+        {
+            "contactID": 6,
+            "name": "하노이 영사관",
+            "phone": "024 3771 0404",
+            "description": "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7th Floor, Chamvit Tower, 117 Tran Duy Hung Street, Ba Dinh, Hanoi, Vietnam</p>\r\n"
+        },
+        {
+            "contactID": 7,
+            "name": "호치민 영사관",
+            "phone": "028 3822 5757",
+            "description": "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 107 Nguyen Du Street, District 1, HCMC</p>\r\n"
+        },
+        {
+            "contactID": 14,
+            "name": "하노이 한인회",
+            "phone": "024 3555 3015",
+            "description": "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 713 7th Floor Charmvit Tower, 117 Tran Duy Hung Street, Ba Dinh, Hanoi, Vietnam</p>\r\n"
+        },
+        {
+            "contactID": 15,
+            "name": "하노이 한인회 독서실",
+            "phone": "024 3555 3018",
+            "description": "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 713 7th Floor Charmvit Tower, 117 Tran Duy Hung Street, Ba Dinh, Hanoi, Vietnam</p>\r\n"
+        },
+        {
+            "contactID": 16,
+            "name": "호치민 한인회",
+            "phone": "028 3920 1610",
+            "description": "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2nd Floor, 47 Nguyen Cu Trinh, District 1, Hochiminh</p>\r\n"
+        },
+        {
+            "contactID": 17,
+            "name": "베트남 중부한인회",
+            "phone": "0236 3797 071",
+            "description": "<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; No.90 Le Thanh Nghi Street, Hai Chau District, Da Nang</p>\r\n"
+        },
+        {
+            "contactID": 34,
+            "name": "하노이 한인회 (24시간 긴급연락처)",
+            "phone": "034 895 3318",
+            "description": ""
+        },
+        {
+            "contactID": 36,
+            "name": "한베 친선 클리닉(세인트폴 병원/ 평일 주간만 진료)",
+            "phone": "024 3734 6835",
+            "description": ""
+        },
+        {
+            "contactID": 37,
+            "name": "경찰청 형사건 접수(베트남어)",
+            "phone": "024 3939 6221",
+            "description": ""
+        },
+        {
+            "contactID": 38,
+            "name": "Benh Vien Viet Duc(독일병원 / 하노이 24시간 응급실운영)",
+            "phone": "024 3825 3531",
+            "description": ""
+        },
+        {
+            "contactID": 39,
+            "name": "Vinmec 병원(하노이 24시간 응급실운영)",
+            "phone": "024 3974 4333",
+            "description": ""
+        },
+        {
+            "contactID": 40,
+            "name": "Family Medical Practice(하노이 24시간 응급실운영)",
+            "phone": "024 3843 0748",
+            "description": ""
+        },
+        {
+            "contactID": 41,
+            "name": "SOS 병원(하노이 24시간 응급실운영)",
+            "phone": "024 3934 0666",
+            "description": ""
+        },
+        {
+            "contactID": 43,
+            "name": "영사콜 센터(해외무료)(해외여행 긴급상황 통역서비스 지원)",
+            "phone": "+800 2100 0404",
+            "description": ""
+        }
+    ],
+    "message": ""
+}

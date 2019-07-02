@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "e5cbc068-e98f-4828-942a-12be4c9a2e43",
+		"name": "YellowVN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetListCategoryAndBanner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://150.95.115.192/api/Service/GetListCategoryAndBanner",
+					"protocol": "http",
+					"host": [
+						"150",
+						"95",
+						"115",
+						"192"
+					],
+					"path": [
+						"api",
+						"Service",
+						"GetListCategoryAndBanner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetListPlace",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cateID\":6,\n\t\"placeID\":0,\n\t\"searchKey\":\"\"\n}"
+				},
+				"url": {
+					"raw": "http://150.95.115.192/api/Service/GetListPlace",
+					"protocol": "http",
+					"host": [
+						"150",
+						"95",
+						"115",
+						"192"
+					],
+					"path": [
+						"api",
+						"Service",
+						"GetListPlace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetListPromotion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\":1,\n\t\"promotionID\":0\n}"
+				},
+				"url": {
+					"raw": "http://150.95.115.192/api/Service/GetListPromotion",
+					"protocol": "http",
+					"host": [
+						"150",
+						"95",
+						"115",
+						"192"
+					],
+					"path": [
+						"api",
+						"Service",
+						"GetListPromotion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetListContact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userAPI\":\"madara\",\n\t\"passAPI\":\"madara\",\n\t\"contactID\":0,\n\t\"searchKey\":\"\"\n}"
+				},
+				"url": {
+					"raw": "http://150.95.115.192/api/Service/GetListContact",
+					"protocol": "http",
+					"host": [
+						"150",
+						"95",
+						"115",
+						"192"
+					],
+					"path": [
+						"api",
+						"Service",
+						"GetListContact"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

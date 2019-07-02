@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:layout_weight="3">
+
+    <TextView
+        android:id="@+id/tv_ten_co_quan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Tên cơ quan"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="#FFFF8F07"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tv_sdt_khancap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Sđt khẩn cấp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="#FFC107"
+        android:textSize="15sp"/>
+
+
+</LinearLayout>
