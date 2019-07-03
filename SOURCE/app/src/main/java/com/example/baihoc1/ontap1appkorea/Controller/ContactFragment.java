@@ -71,15 +71,15 @@ public class ContactFragment extends Fragment {
                     com.example.baihoc1.ontap1appkorea.Model.Contact contact = gson.fromJson
                             (strJson, com.example.baihoc1.ontap1appkorea.Model.Contact.class);
                     LinearLayoutManager linearLayoutManager =
-                            new LinearLayoutManager(ContactFragment.this
+                            new LinearLayoutManager(getContext()
                             ,LinearLayoutManager.VERTICAL,false);
                     rvSdtKhanCap.setLayoutManager(linearLayoutManager);
                     ContactAdapter adapter = new ContactAdapter();
-                    adapter.setContext(ContactFragment.this);
+                    adapter.setContext(getContext());
                     adapter.setData(contact.getContactResult());
                     rvSdtKhanCap.setAdapter(adapter);
                     rvSdtKhanCap.addItemDecoration(new DividerItemDecoration
-                            (ContactFragment.this, DividerItemDecoration.VERTICAL));
+                            (getContext(), DividerItemDecoration.VERTICAL));
 
                 } catch (IOException e) {
                     e.printStackTrace();

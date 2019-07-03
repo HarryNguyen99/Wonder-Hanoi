@@ -11,19 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Controller.Detail" android:parentActivityName=".Controller.Promotion">
-
-        </activity>
-        <activity android:name=".Controller.Promotion">
-        </activity>
-        <activity android:name=".Controller.Place">
-        </activity>
-        <activity android:name=".Controller.MainActivity">
+        <activity
+            android:name=".Controller.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Controller.MainActivity">
         </activity>
     </application>
 

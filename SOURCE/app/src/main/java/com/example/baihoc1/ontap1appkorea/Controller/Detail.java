@@ -45,8 +45,10 @@ public class Detail extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
     }
+
+
+
 
     private void getData() {
         PlaceResult placeResult = (PlaceResult)getIntent().getSerializableExtra("promotion");

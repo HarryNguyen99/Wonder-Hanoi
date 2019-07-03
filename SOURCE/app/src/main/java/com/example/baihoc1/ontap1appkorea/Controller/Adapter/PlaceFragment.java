@@ -1,18 +1,21 @@
-package com.example.baihoc1.ontap1appkorea.Controller;
+package com.example.baihoc1.ontap1appkorea.Controller.Adapter;
 
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.Toast;
-import com.example.baihoc1.ontap1appkorea.Controller.Adapter.PlaceAdapter;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.baihoc1.ontap1appkorea.Controller.Api;
 import com.example.baihoc1.ontap1appkorea.R;
-import com.example.baihoc1.ontap1appkorea.interfaces.OnClickSccues;
 import com.google.gson.Gson;
+
 import java.io.IOException;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -20,20 +23,31 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class Place extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class PlaceFragment extends Fragment {
     RecyclerView rvTaxi;
+    View vRoot;
+
+
+    public PlaceFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.place_layout);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        vRoot = inflater.inflate(R.layout.fragment_place, container, false);
         init();
         getdata();
-
+        return vRoot;
     }
 
     private void getdata() {
-        GetListPlacebody getListPlacebody = new GetListPlacebody(0,0,"");
+        GetListPlacebody getListPlacebody = new GetListPlacebody(0, 0, "");
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl("http://150.95.115.192/api/")
@@ -41,7 +55,6 @@ public class Place extends AppCompatActivity {
         retrofit.create(Api.class).getContact(getListPlacebody).enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-               // Toast.makeText(Place.this, "ok", Toast.LENGTH_SHORT).show();
                 String strJson = null;
                 try {
                     strJson = response.body().string();
@@ -49,14 +62,14 @@ public class Place extends AppCompatActivity {
                     com.example.baihoc1.ontap1appkorea.Model.Place place = gson.fromJson
                             (strJson, com.example.baihoc1.ontap1appkorea.Model.Place.class);
                     LinearLayoutManager linearLayoutManager = new LinearLayoutManager
-                            (Place.this, LinearLayoutManager.VERTICAL, false);
+                            (getContext(), LinearLayoutManager.VERTICAL, false);
                     rvTaxi.setLayoutManager(linearLayoutManager);
                     PlaceAdapter adapter = new PlaceAdapter();
-                    adapter.setContext(Place.this);
+                    adapter.setContext(getContext());
                     adapter.setData(place.getPlaceResults());
                     rvTaxi.setAdapter(adapter);
                     rvTaxi.addItemDecoration(new DividerItemDecoration
-                            (Place.this, DividerItemDecoration.VERTICAL));
+                            (getContext(), DividerItemDecoration.VERTICAL));
 
 
                 } catch (IOException e) {
@@ -66,19 +79,19 @@ public class Place extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-                Toast.makeText(Place.this, "that bai"+t, Toast.LENGTH_SHORT).show();
 
             }
         });
-
     }
 
 
     private void init() {
-        rvTaxi = findViewById(R.id.rv_sdt_taxi);
+        {
+            rvTaxi = vRoot.findViewById(R.id.rv_sdt_taxi);
+        }
     }
 
-    public class GetListPlacebody {
+    class GetListPlacebody {
         int cateID, placeID;
         String searchKey;
 
@@ -87,5 +100,7 @@ public class Place extends AppCompatActivity {
             this.placeID = placeID;
             this.searchKey = searchKey;
         }
+
+
     }
 }

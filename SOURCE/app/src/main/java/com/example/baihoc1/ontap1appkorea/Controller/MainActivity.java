@@ -47,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             }
                             case  R.id.nav_promation : {
+                                PromotionFragment promotionFragment = new PromotionFragment();
+                                FragmentTransaction fragmentTransaction =
+                                        getSupportFragmentManager().beginTransaction();
+                                fragmentTransaction.replace(R.id.container,promotionFragment);
+                                fragmentTransaction.commit();
 
                                 break;
                             }
