@@ -6,7 +6,7 @@
     android:layout_margin="2dp">
 
     <ImageView
-        android:id="@+id/img_media_main"
+        android:id="@+id/img_media_home"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:adjustViewBounds="true" />

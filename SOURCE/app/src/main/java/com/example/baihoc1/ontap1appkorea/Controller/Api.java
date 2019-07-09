@@ -15,4 +15,7 @@ public interface Api {
 
     @POST("Service/GetListPromotion")
     Call<ResponseBody> getPromotion (@Body Object object);
+
+    @POST("Service/GetListCategoryAndBanner")
+    Call<ResponseBody> getCategory ();
 }

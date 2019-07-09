@@ -4,9 +4,6 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-
-
-
     <ImageView
         android:id="@+id/img_logo_ks_detail"
         android:layout_width="120dp"

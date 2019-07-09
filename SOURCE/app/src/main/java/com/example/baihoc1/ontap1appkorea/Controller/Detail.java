@@ -45,6 +45,7 @@ public class Detail extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
     }
 
 
@@ -53,7 +54,6 @@ public class Detail extends AppCompatActivity {
     private void getData() {
         PlaceResult placeResult = (PlaceResult)getIntent().getSerializableExtra("promotion");
         data.add(placeResult);
-       // Log.d("", "getData: ");
         for(int i = 0; i< placeResult.getListMedia().size();i++){
             data.add(placeResult.getListMedia().get(i));
         }

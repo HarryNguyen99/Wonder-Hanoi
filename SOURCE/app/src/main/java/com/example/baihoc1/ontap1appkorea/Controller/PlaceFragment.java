@@ -1,4 +1,4 @@
-package com.example.baihoc1.ontap1appkorea.Controller.Adapter;
+package com.example.baihoc1.ontap1appkorea.Controller;
 
 
 import android.os.Bundle;
@@ -9,7 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.example.baihoc1.ontap1appkorea.Controller.Adapter.PlaceAdapter;
 import com.example.baihoc1.ontap1appkorea.Controller.Api;
 import com.example.baihoc1.ontap1appkorea.R;
 import com.google.gson.Gson;
@@ -52,7 +54,8 @@ public class PlaceFragment extends Fragment {
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl("http://150.95.115.192/api/")
                 .build();
-        retrofit.create(Api.class).getContact(getListPlacebody).enqueue(new Callback<ResponseBody>() {
+        retrofit.create(Api.class).getListPlace(getListPlacebody).
+                enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 String strJson = null;
@@ -71,7 +74,6 @@ public class PlaceFragment extends Fragment {
                     rvTaxi.addItemDecoration(new DividerItemDecoration
                             (getContext(), DividerItemDecoration.VERTICAL));
 
-
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -83,8 +85,6 @@ public class PlaceFragment extends Fragment {
             }
         });
     }
-
-
     private void init() {
         {
             rvTaxi = vRoot.findViewById(R.id.rv_sdt_taxi);

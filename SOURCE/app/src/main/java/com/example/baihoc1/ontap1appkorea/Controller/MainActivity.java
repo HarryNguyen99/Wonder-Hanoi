@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void init(){
+        HomeFragment homeFragment = new HomeFragment();
+        FragmentTransaction fragmentTransaction =
+                getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.container,homeFragment);
+        fragmentTransaction.commit();
+
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener
                 (new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -31,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                         switch (menuItem.getItemId()){
                             case  R.id.nav_home: {
+
+                                HomeFragment homeFragment = new HomeFragment();
+                                FragmentTransaction fragmentTransaction =
+                                        getSupportFragmentManager().beginTransaction();
+                                fragmentTransaction.replace(R.id.container,homeFragment);
+                                fragmentTransaction.commit();
 
                                 break;
                             }
@@ -43,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             }
                             case  R.id.nav_place : {
+                                PlaceFragment placeFragment = new PlaceFragment();
+                                FragmentTransaction fragmentTransaction =
+                                        getSupportFragmentManager().beginTransaction();
+                                fragmentTransaction.replace(R.id.container,placeFragment);
+                                fragmentTransaction.commit();
 
                                 break;
                             }
